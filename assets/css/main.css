@@ -5,6 +5,10 @@ body {
     background-color: #eee;
 }
 
+.menu {
+    display: none;
+}
+
 .header {
     background-color: #fff;
     padding: 20px 0;
@@ -12,6 +16,7 @@ body {
 
 .header .logo {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 2px;
 
@@ -27,6 +32,7 @@ body {
 
 .nav ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -34,12 +40,13 @@ body {
     color: #101928;
 }
 
-.active{
-font-weight: 900;
+.active {
+    font-weight: 900;
 }
 
 .auth {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
@@ -47,17 +54,44 @@ font-weight: 900;
 .auth a {
     font-family: var(--subFont);
     border-radius: 10px;
+    font-weight: 700;
     padding: 5.3541765213012695px 40.18113136291504px;
 }
 
 .auth .login {
     border: 2px solid var(--mainColor);
     color: var(--mainColor);
-    font-weight: 700;
 }
 
 .auth .register {
     border: 2px solid var(--mainColor);
     color: #fff;
     background-color: var(--mainColor);
+}
+
+@media screen and (max-width:992px) {
+
+    .nav,
+    .auth {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        order: 1;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .container{ 
+        width: calc(100% - 120px);
+    }
+    .header .logo img{
+        width: 20px;
+    }
+    .header .logo a{
+        font-size: 14px;
+    }
+
 }

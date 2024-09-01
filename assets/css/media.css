@@ -1,0 +1,50 @@
+body{
+    background-color:teal;
+}
+h2{
+    background-color: rgb(242, 243, 248);
+}
+@media screen  and (min-width:0) and (max-width:576px) {
+    h2{
+        background-color: rgb(8, 182, 191);
+       
+    }
+}
+  
+
+@media screen and (min-width:577px) and (max-width:768px)  {
+    h2{
+        background-color: rgb(209, 139, 85);
+       
+    }
+    
+}
+
+@media screen and (min-width:769px) and (max-width:992px)  {
+    h2{
+        background-color:green;
+       
+    }
+    
+}
+@media screen and (min-width:993px) and (max-width:1200px)  {
+    h2{
+        background-color: yellow;
+       
+    }
+    
+}
+@media screen and (min-width:1201px) and (max-width:1400px)  {
+    h2{
+        background-color: rgb(106, 42, 165);
+       
+    }
+    
+}
+@media screen and (min-width:1401px)  {
+    h2{
+        background-color: rgb(255, 0, 98);
+       
+    }
+    
+}
