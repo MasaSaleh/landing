@@ -30,13 +30,13 @@ body {
     color: var(--mainColor);
 }
 
-.nav ul {
+.navbar ul {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
 }
 
-.nav ul li a {
+.navbar ul li a {
     color: #101928;
 }
 
@@ -71,7 +71,7 @@ body {
 
 @media screen and (max-width:992px) {
 
-    .nav,
+    .navbar,
     .auth {
         display: none;
     }
@@ -84,14 +84,108 @@ body {
 }
 
 @media screen and (max-width:576px) {
-    .container{ 
+    .container {
         width: calc(100% - 120px);
     }
-    .header .logo img{
+
+    .header .logo img {
         width: 20px;
     }
-    .header .logo a{
+
+    .header .logo a {
         font-size: 14px;
     }
 
+}
+.footer{
+    background-color: #393E46;
+    color: white;
+    padding: 50px 0;;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer .row {
+    gap: 20px;
+}
+
+.footer .footer-start {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+
+.footer-start .logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.footer-start .logo img {
+    width: 35px;
+}
+
+.footer-start .icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-start .icons img {
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 40px;
+    height: 35px;
+}
+
+.footer .footer-end {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-end nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-end .footer-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media screen and (max-width:1200px) {
+    .footer .row{
+        gap: 10px;
+    }
+    .footer-start{
+        width: 100%;
+    }
+
+    .footer-end{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footer-items{
+        width: 50%;
+        margin-bottom: 21px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .footer-items{
+        width: 100%;
+    }
 }
