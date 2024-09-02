@@ -97,10 +97,67 @@ body {
     }
 
 }
-.footer{
+
+.testimonials{
+    padding: 50px 0;
+    background-color: white;
+}
+.testimonials .row {
+    gap: 40px;
+}
+
+.testimonial{
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 8.23719596862793px 8.23719596862793px rgba(0, 0, 0, 0.1);
+    width: calc((100% - 40px) /2);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.test{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.user-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items:center;
+}
+.user-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.test .user-data {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.rating {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+@media screen and (max-width:768px) {
+
+    .testimonial{
+        width: 100%;
+    }
+}
+.footer {
     background-color: #393E46;
     color: white;
-    padding: 50px 0;;
+    padding: 50px 0;
+    ;
 }
 
 .footer a {
@@ -116,7 +173,8 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 20px;
-    width: 400px;
+    width: 50%;
+    width: calc((100% - 20px) / 2);
 }
 
 .footer-start .logo {
@@ -144,13 +202,14 @@ body {
 }
 
 .footer .footer-end {
-    flex-grow: 1;
+    width: calc((100% - 20px) / 2);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
 }
 
-.footer-end nav{
+.footer-end nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -164,28 +223,38 @@ body {
     gap: 10px;
 }
 
-@media screen and (max-width:1200px) {
-    .footer .row{
+@media screen and (max-width:768px) {
+    .footer .row {
+        flex-direction: column;
+    }
+
+    .footer .footer-start,
+    .footer-end {
+        width: 100%;
+    }
+
+    .footer .footer-end {
         gap: 10px;
     }
-    .footer-start{
-        width: 100%;
-    }
 
-    .footer-end{
-        width: 100%;
+    .footer .footer-end .footer-items {
+        width: calc((100% - 10px) / 4);
     }
 }
 
-@media screen and (max-width:768px) {
-    .footer-items{
-        width: 50%;
-        margin-bottom: 21px;
+@media screen and (max-width:576px) {
+    .footer .footer-end {
+        gap: 10px;
+    }
+
+    .footer .footer-end .footer-items {
+        width: calc((100% - 10px) / 4);
     }
 }
 
-@media screen and (max-width:400px) {
-    .footer-items{
+@media screen and (max-width :460px) {
+
+    .footer .footer-end .footer-items {
         width: 100%;
-    }
-}
+        text-align: center;
+    }}
