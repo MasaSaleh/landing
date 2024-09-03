@@ -101,6 +101,114 @@ body {
 
 }
 
+.begins{
+    background-color: white;
+}
+
+.begins .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.begins .left-begins{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width:350px;
+    padding: 8px;
+}
+
+.begins .left-begins span{
+    color: var(--mainColor);
+    font-size: 60px;
+    font-family: var(--subFont);
+    font-weight: 600;
+}
+
+.begins .left-begins .first-part{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.begins .left-begins .first-part p:first-of-type{
+    color: var(--mainColor);
+    font-family: var(--subFont);
+    font-size: 10px;
+    font-weight:600 ;
+}
+
+.begins .left-begins .first-part h1{
+    font-size:50px;
+    font-weight: 700;
+}
+
+.begins .left-begins .first-part p:last-of-type{
+    color: #969696;
+    font-family: var(--mainFont);   
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.begins .left-begins .second-part{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.begins .left-begins .second-part a:first-of-type{
+    color: white;
+    background-color: var(--mainColor);
+    font-family: var(--subFont);
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    font-size:14px ;
+    font-weight:bold ;
+}
+
+.second-part .play-video{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:4px;
+}
+.second-part .play-video p{
+    font-family: var(--subFont);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.begins .right-begins{
+display: flex;
+justify-content: flex-end;
+flex-grow: 1;
+}
+
+.begins .right-begins img{
+width: 40%;
+}
+
+@media screen and(max-width:1200px){
+   .left-begins{
+    width: 100%;
+   } 
+   .right-begins{
+    width: 100%;
+    justify-content: center;
+    font-display: flex;
+   }
+   .begins .row {
+    flex-direction: column;
+    align-items: center;
+}
+   .right-begins img{
+    width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+   }
+
 .courses {
     padding: 20px;
     background-color: #fff;
