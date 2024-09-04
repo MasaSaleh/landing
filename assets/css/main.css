@@ -1,4 +1,4 @@
-@import './base.css';
+@import "./base.css";
 
 body {
     font-family: var(--mainFont);
@@ -9,6 +9,7 @@ body {
     display: none;
 }
 
+/*start header*/
 .header {
     background-color: #fff;
     padding: 20px 0;
@@ -22,7 +23,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     gap: 2px;
-
 }
 
 .header .logo img {
@@ -72,35 +72,31 @@ body {
     background-color: var(--mainColor);
 }
 
-@media screen and (max-width:992px) {
-
+@media screen and (max-width: 992px) {
     .navbar,
     .auth {
         display: none;
     }
-
     .menu {
         display: block;
         order: 1;
     }
-
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
     .container {
         width: calc(100% - 120px);
     }
-
     .header .logo img {
         width: 20px;
     }
-
     .header .logo a {
         font-size: 14px;
     }
-
 }
+/*end header*/
 
+/*start bedins*/
 .begins {
     background-color: white;
 }
@@ -194,18 +190,15 @@ body {
     .left-begins {
         width: 100%;
     }
-
     .right-begins {
         width: 100%;
         justify-content: center;
         font-display: flex;
     }
-
     .begins .row {
         flex-direction: column;
         align-items: center;
     }
-
     .right-begins img {
         width: 100%;
         display: flex;
@@ -213,8 +206,11 @@ body {
     }
 }
 
+/*end begins*/
+
+/*start give*/
 .give {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     padding: 50px;
 }
 
@@ -275,7 +271,7 @@ body {
 }
 
 .course-right p:last-of-type {
-    color: #DDDDDD;
+    color: #dddddd;
     font-size: 10px;
     font-weight: 250;
     font-family: var(--mainFont);
@@ -294,7 +290,6 @@ body {
     border-radius: 22px;
     gap: 10px;
     align-items: flex-start;
-
 }
 
 /* Removes underline from links .course-right .arrows {
@@ -319,16 +314,16 @@ body {
     height: 20px;
 }*/
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
     .give .row {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 100%
+        width: 100%;
     }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
     .course-right {
         width: 100%;
         display: flex;
@@ -338,10 +333,125 @@ body {
     }
 }
 
+/*end give*/
+
+/*start people-courses*/
+.people-courses {
+    background-color: var(--mainColor);
+    padding: 20px;
+}
+
+.people-courses .row {
+    display: flex;
+    gap: 10px;
+}
+
+.people-courses .people-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.people-courses .people-photo img {
+    width: 60%;
+}
+
+.people-courses .people-taking {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 460px;
+    gap: 20px;
+}
+
+.people-courses .people-taking .explanation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.people-taking .explanation p:first-of-type {
+    color: #f0c932;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--subFont);
+}
+
+.people-taking .explanation h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: var(--mainFont);
+}
+
+.people-taking .explanation p:last-of-type {
+    color: #dddddd;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--mainFont);
+}
+
+.people-courses .people-taking .rate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.people-taking .rate span {
+    color: #f0c932;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: var(--subFont);
+}
+
+.people-taking .rate p {
+    color: #dddddd;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--subFont);
+}
+
+@media screen and (max-width: 1200px) {
+    .people-courses .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .people-taking .explanation h2 {
+        font-size: 80px;
+    }
+    .people-photo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .people-taking {
+        width: 100%;
+    }
+    .people-photo img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .rate {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/*end people-courses*/
+
+/*start courses*/
 .courses {
     padding: 20px;
     background-color: #fff;
-
 }
 
 .courses .row {
@@ -419,7 +529,6 @@ body {
     font-family: var(--subFont);
     font-weight: 600;
     color: #969696;
-
 }
 
 .courses .row:first-of-type {
@@ -430,7 +539,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 
 .courses-description p:first-of-type {
@@ -443,7 +551,7 @@ body {
     font-weight: 650;
     font-family: var(--mainFont);
     font-size: 30px;
-    color: #141E32;
+    color: #141e32;
 }
 
 .courses-description p:last-of-type {
@@ -466,17 +574,16 @@ body {
     color: white;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
     .courses-items {
         width: 100%;
     }
-
     .courses-description {
         width: 100%;
     }
 }
 
-@media screen and (max-width:796px) {
+@media screen and (max-width: 796px) {
     .courses-items {
         display: flex;
         flex-direction: column;
@@ -484,6 +591,9 @@ body {
     }
 }
 
+/*end courses*/
+
+/*start testimonials*/
 .testimonials {
     padding: 50px 0;
     background-color: white;
@@ -494,7 +604,7 @@ body {
 }
 
 .testimonial {
-    width: calc((100% - 40px) /2);
+    width: calc((100% - 40px) / 2);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -523,7 +633,6 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
-
 }
 
 .rating {
@@ -532,24 +641,26 @@ body {
 }
 
 .testimonial::after {
-    content: '';
+    content: "";
     position: absolute;
-    border-top: 70px solid #F4F4F4;
+    border-top: 70px solid #f4f4f4;
     border-bottom: 70px solid transparent;
     border-left: 70px solid transparent;
     right: 0;
     top: 0;
 }
 
-@media screen and (max-width:768px) {
-
+@media screen and (max-width: 768px) {
     .testimonial {
         width: 100%;
     }
 }
 
+/*end testimonials*/
+
+/*start footer*/
 .footer {
-    background-color: #393E46;
+    background-color: #393e46;
     color: white;
     padding: 50px 0;
 }
@@ -600,7 +711,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
 }
 
 .footer-end nav {
@@ -617,39 +727,36 @@ body {
     gap: 10px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .footer .row {
         flex-direction: column;
     }
-
     .footer .footer-start,
     .footer-end {
         width: 100%;
     }
-
     .footer .footer-end {
         gap: 10px;
     }
-
     .footer .footer-end .footer-items {
         width: calc((100% - 10px) / 4);
     }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
     .footer .footer-end {
         gap: 10px;
     }
-
     .footer .footer-end .footer-items {
         width: calc((100% - 10px) / 4);
     }
 }
 
-@media screen and (max-width :460px) {
-
+@media screen and (max-width: 460px) {
     .footer .footer-end .footer-items {
         width: 100%;
         text-align: center;
     }
 }
+
+/*end footer*/
